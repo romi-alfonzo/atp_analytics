@@ -1,0 +1,17 @@
+Tabla completamente desnormalizada:
+- "player_id", "name_first", "name_last", "hand", "day_of_birthday", "height", "country",
+"ranking_date", "rank", "points", "top_position", "decade"
+
+
+player_id: ID del player (integer, unico por player)
+name_first: Nombres del Jugador (text).
+name_last: Apellidos del Jugador (text).
+hand: R, L o NOT REGISTERED (text)
+day_of_birthday: Fecha de Nacimiento del Jugador (YYYY-MM-DD).
+height: Altura en CM (integer).
+country: País al que representa (text).
+ranking_date: Fecha del ranking (date, yyyy-mm-dd)
+rank: Puesto en ranking alcanzado (integer, NOT REGISTERED=0)
+points: Puntos alcanzados (integer, NOT REGISTERED=0)
+top_position: Clasificación en el top (text). Puede ser: "TOP 10", "TOP 20", "TOP 50", "TOP 100", "TOP 1000", "OUTSIDE TOP 1000", "NOT REGISTERED"
+decade: Década del ranking (text). Puede ser: "1970's", "1980's", "1990's", "2000's", "2010's", "2020's"

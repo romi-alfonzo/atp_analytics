@@ -1,0 +1,72 @@
+//"player_id", "name_first","name_last","hand","day_of_birthday","height","ranking_date","rank","points","country","decade","top_position"
+
+PUT /atp_player_country_decade
+{
+    "mappings": {
+        "properties": {
+                "player_id": {
+                    "type": "integer"
+                },
+                "name_first": { 
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "name_last": { 
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                        "type": "keyword"
+                        }
+                    }
+                },
+                "hand": {
+                    "type": "keyword"
+                },
+                "day_of_birthday": {
+                    "type": "date",
+                    "format": "yyyy-mm-dd"
+                },
+                "height": {
+                    "type": "integer"
+                },
+                "ranking_date": {
+                    "type": "date",
+                    "format": "yyyy-mm-dd"
+                },
+                "rank": {
+                    "type": "integer"
+                },
+                "points": {
+                    "type": "integer"
+                },
+                "country": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+            "decade": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "top_position": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                }
+            }        
+        }
+    }
+}
